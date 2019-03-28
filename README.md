@@ -1,7 +1,7 @@
-# Modul 300 – LB1
+# Modul 300 – LB2
 
 ## Inhaltsverzeichnis
-- [Modul 300 – LB1](#modul-300-%E2%80%93-lb1)
+- [Modul 300 – LB2](#modul-300-%E2%80%93-lb2)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [01 - Verwendete Tools](#01---verwendete-tools)
   - [02 - Wissenstand](#02---wissenstand)
