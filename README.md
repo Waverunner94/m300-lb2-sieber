@@ -11,12 +11,13 @@
     - [02.4 - Versionsverwaltung](#024---versionsverwaltung)
     - [02.5 Mark Down](#025-mark-down)
     - [02.6 Systemsicherheit](#026-systemsicherheit)
+    - [02.7 Docker Desktop](#027-docker-desktop)
   - [03 Lernschritte und Durchführung LB2](#03-lernschritte-und-durchf%C3%BChrung-lb2)
 
 
 ## 01 - Verwendete Tools
 * Oracle VirtualBox 6.0
-* Vagrant
+* Docker Desktop
 * Visual Studio Code
 * Git-Client (inkl. SSH-Key)
   
@@ -39,7 +40,10 @@ Keine Vorkenntnisse mit Git vorhanden.
 Vorkenntnisse aus Modul 300 - LB1 vorhanden, Dokumentation mit Mark Down geschrieben und auf GitHub Repository veröffentlicht.
 
 ### 02.6 Systemsicherheit
-Erfahrung mit der sicheren Aufbewahrung von sensitiven Daten, sicheres lagern von Passwörtern, Firewall, etc.
+Erfahrung mit der sicheren Aufbewahrung von sensitiven Daten, sicheres lagern von Passwörtern, Firewall, etc.  
+
+### 02.7 Docker Desktop
+Keine Vorkenntnisse mit Docker vorhanden, noch nie damit gearbeitet.
 
 ## 03 Lernschritte und Durchführung LB2
 Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktualisieren werde.
