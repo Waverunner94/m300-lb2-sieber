@@ -46,8 +46,14 @@ Erfahrung mit der sicheren Aufbewahrung von sensitiven Daten, sicheres lagern vo
 Keine Vorkenntnisse mit Docker vorhanden, noch nie damit gearbeitet.
 
 ## 03 Lernschritte und Durchführung LB2
-Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktualisieren werde.
-
-**Netzwerkplan** 
+Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktualisieren werde.  
 
 **Docker-Befehle**  
+*docker ps -all*                                                - Zeigt alle aktiven und beendeten Container an.  
+*docker images -a*                                              - Zeigt alle lokalen Images an.  
+*docker rm [Containername]*                                     - Löscht beliebigen Container.  
+*docker rmi [Imagename]*                                        - Löscht beliebiges Image.  
+*docker pull [Filename]*                                        - Beliebiges Image herunterladen, z.B. Ubuntu.  
+*docker volume create [name]*                                   - Erstellen eines Volumes auf dem Host.  
+*docker inspect [volumename]*                                   - Zeigt detailierte Informationen zum erstellen Volume an.  
+*docker run -it -volume1:/container/volume1 ubuntu /bin/bash*   - Startet Container mit interaktiven Shell und dem Volume.  
