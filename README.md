@@ -61,7 +61,7 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 +-------------------------------------------------+
 ! Container Lorem Ipsum - x.x.x.x                 !
 ! Container Lorem Ipsum - x.x.x.x                 !
-! Container PHP-Apache - 18.195.215.14:80         !
+! Container PHP-Apache - [18.195.215.14:80](http://18.195.215.14/)         !
 +-------------------------------------------------+
 ! Docker                                          !
 +-------------------------------------------------+
