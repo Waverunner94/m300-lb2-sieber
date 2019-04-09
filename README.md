@@ -104,7 +104,7 @@ EXPOSE: Sagt Docker auf welche Ports die laufenden Container hören sollen.
 
 **Ausführen eines Containers mit persistenter Datenablage (K3)**  
 Damit ich den Container nicht bei jeder Änderung im PHP-File stoppen und wieder starten muss, erzeuge ich beim starten des Containers eine persistente Datenablage und jede Änderung die ich am Host im PHP-File vornehme wird auch im Container vorgenommen.  
-1. In der CMD folgenden Befehl eingeben: *docker run -p 80:80 -v C:/lb2/src/:/var/www/html sali-welt*.  
+1. In der CMD folgenden Befehl eingeben: *docker run -p 80:80 -v C:/lb2/src/:/var/www/html/ sali-welt*.  
 
 Nun kann man in einem beliebigen Browser mit der Eingabe *localhost* das index.php-File aufrufen und alle Änderungen auf dem Host sind sofort nach aktualisieren der Seite sichtbar.  
 
@@ -131,4 +131,14 @@ Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) h
   <?php
     echo "Sali welt"
   ?>
-
+```
+15. In ein beliebiges Verzeichnis wechseln und mit *touch Dockerfile* ein Dockerfile erstellen.  
+16. Mithilfe des VIM-Editors *vim Dockerfile* das Dockerfile bearbeiten und folgende Zeilen einfügen:  
+```
+  FROM php:7.3.4-apache
+  COPY src/ /var/www/html
+  EXPOSE 80
+```  
+17. Ein neues Image basierend auf dem erstellten Dockerfile mit *docker build -t sali-welt .* erzeugen.  
+18. Den Container mit der persistenten Dateiablage starten: *docker run -p 80:80 -v /var/lib/docker/volumes/lb2/:/var/www/html/ sali-welt*  
+19. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*
