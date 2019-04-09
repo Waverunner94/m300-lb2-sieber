@@ -122,4 +122,13 @@ Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) h
 7. Docker starten mit *sudo service docker start*  
 8. Den ec2-user (User der Amazon Linux 2 Instanz) zur Docker-Gruppe hinzufügen um Docker-Befehle ohne sudo ausführen zu können *sudo usermod -a -G docker ec2-user*  
 9. Nach aus- und einloggen mit *docker info* prüfen ob Docker Befehle nun ohne sudo ausgeführt werden können.  
-10. 
+10. Mit *docker volume create lb2* ein neues Volume-Verzeichnis erstellen.  
+11. Mit *sudo su* als Root-User anmelden und mit *cd /var/lib/docker/* das Verzeichnis wechseln.  
+12. Die Berechtigungen für das Verzeichnis *Volumes* mit *sudo chmod -R 755 volumes/* ändern.  
+13. Ins Verzeichnis *Volumes* wechseln und mit *touch index.php* ein PHP-File erstellen.  
+14. Mithilfe des VIM-Editors *vim index.php* das PHP-File bearbeiten und folgende Zeilen einfügen:  
+```
+  <?php
+    echo "Sali welt"
+  ?>
+
