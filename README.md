@@ -115,7 +115,7 @@ Nun kann man in einem beliebigen Browser mit der Eingabe *localhost* das index.p
 Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) habe ich Docker auf einer Amazon Linux 2 Maschine installiert und die Container von dieser Maschine aus ausgeführt.  
 1. Erstellen eines AWS-Accounts, dies ermöglicht eine kostenlose 12-Monatige Nutzung verschiedener AWS-Dienstleistungen (Kreditkarte benötigt!).  
 2. Erzeugen einer *AWS EC2 Instance*, hier habe ich mich für die kostenfreie Amazon Linux 2 Instanz entschieden.  
-3. SSH-Key herunterladen und mit PuTTYgen einen privaten Key erzeugen um eine SSH-Verbindung via PuTTy zu ermöglichen.  
+3. SSH-Key herunterladen und mit PuTTYgen einen privaten Key erzeugen um eine [SSH-Verbindung via PuTTy](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console) zu ermöglichen.  
 4. Mithilfe den vorhandenen Informationen der erzeugten AWS EC2 Insanz, eine SSH-Verbindung via PuTTy zur Amazon Linux 2 Maschine herstellen.  
 5. Updaten der Linux Instanz mit *sudo yum update -y*  
 6. Docker installieren mit *sudo amazon-linux-extras install docker*
