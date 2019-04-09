@@ -79,4 +79,12 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
     echo "Sali welt"
   ?>
 ```
-4. 
+4. Um den PHP-Apache Dienst auf Docker laufen zu lassen, suche ich auf der Docker Hub Webseite nach dem offiziellen PHP Image. Folgendes kommt nun ins Dockerfile:  
+```
+  FROM php:7.3.4-apache
+  COPY src/ /var/www/html
+  EXPOSE 80
+```  
+FROM: gibt an welches Image heruntergeladen werden soll, in diesem Fall PHP-Apache 7.3.4.  
+COPY: Kopiert den Inhalt des Host-Verzeichnisses (*src/*) ins Verzeichnis des Containers (*/var/www/html*).  
+EXPOSE: Sagt Docker auf welche Ports die laufenden Container hören sollen.  
