@@ -94,4 +94,7 @@ EXPOSE: Sagt Docker auf welche Ports die laufenden Container hören sollen.
 Damit ich den Container nicht bei jeder Änderung im PHP-File stoppen und wieder starten muss, erzeuge ich beim starten des Containers eine persistente Datenablage und jede Änderung die ich am Host im PHP-File vornehme wird auch im Container vorgenommen.  
 1. In der CMD folgenden Befehl eingeben: *docker run -p 80:80 -v C:/lb2/src/:/var/www/html sali-welt*.  
 
-Nun kann in einem beliebigen Browser mit der Eingabe *localhost* das index.php-File aufrufen und alle Änderungen auf dem Host sind sofort nach aktualisieren der Seite sichtbar.
+Nun kann in einem beliebigen Browser mit der Eingabe *localhost* das index.php-File aufrufen und alle Änderungen auf dem Host sind sofort nach aktualisieren der Seite sichtbar.  
+
+2. Mit der Tastenkombination *CTRL-C* in der CMD kann man den Container stoppen. 
+3. Möchte ich den Container erneut starten, lasse ich mir mit *docker ps --all* alle vorhandenen Container anzeigen und starte diesen wieder indem ich die ersten paar Buchstaben und Ziffern der ID eintippe *docker start abc77*  
