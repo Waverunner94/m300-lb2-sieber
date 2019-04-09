@@ -112,3 +112,14 @@ Nun kann man in einem beliebigen Browser mit der Eingabe *localhost* das index.p
 3. Möchte ich den Container erneut starten, lasse ich mir mit *docker ps --all* alle vorhandenen Container anzeigen und starte diesen wieder indem ich die ersten paar Buchstaben und Ziffern der ID eintippe *docker start abc77*  
 
 **Docker-Umgebung in Cloud (K3/K4/K6)**  
+Mithilfe von AWS EC2 (Amazon Elastic Compute Cloud) habe ich Docker auf einer Amazon Linux 2 Maschine installiert und die Container von dieser Maschine aus ausgeführt.  
+1. Erstellen eines AWS-Accounts, dies ermöglicht eine kostenlose 12-Monatige Nutzung verschiedener AWS-Dienstleistungen (Kreditkarte benötigt!).  
+2. Erzeugen einer *AWS EC2 Instance*, hier habe ich mich für die kostenfreie Amazon Linux 2 Instanz entschieden.  
+3. SSH-Key herunterladen und mit PuTTYgen einen privaten Key erzeugen um eine SSH-Verbindung via PuTTy zu ermöglichen.  
+4. Mithilfe den vorhandenen Informationen der erzeugten AWS EC2 Insanz, eine SSH-Verbindung via PuTTy zur Amazon Linux 2 Maschine herstellen.  
+5. Updaten der Linux Instanz mit *sudo yum update -y*  
+6. Docker installieren mit *sudo amazon-linux-extras install docker*
+7. Docker starten mit *sudo service docker start*  
+8. Den ec2-user (User der Amazon Linux 2 Instanz) zur Docker-Gruppe hinzufügen um Docker-Befehle ohne sudo ausführen zu können *sudo usermod -a -G docker ec2-user*  
+9. Nach aus- und einloggen mit *docker info* prüfen ob Docker Befehle nun ohne sudo ausgeführt werden können.  
+10. 
