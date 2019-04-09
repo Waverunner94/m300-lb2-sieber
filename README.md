@@ -102,7 +102,7 @@ COPY: Kopiert den Inhalt des Host-Verzeichnisses (*src/*) ins Verzeichnis des Co
 EXPOSE: Sagt Docker auf welche Ports die laufenden Container hören sollen.  
 5. Das Dockerfile abspeichern und via CMD den Befehl *docker build -t sali-welt .* eingeben + ausführen. Dies erstellt ein neues Image mit dem Namen *Sali-Welt*.  
 
-**Ausführen eines Containers mit persistenter Datenablage(K3)**  
+**Ausführen eines Containers mit persistenter Datenablage (K3)**  
 Damit ich den Container nicht bei jeder Änderung im PHP-File stoppen und wieder starten muss, erzeuge ich beim starten des Containers eine persistente Datenablage und jede Änderung die ich am Host im PHP-File vornehme wird auch im Container vorgenommen.  
 1. In der CMD folgenden Befehl eingeben: *docker run -p 80:80 -v C:/lb2/src/:/var/www/html sali-welt*.  
 
@@ -111,4 +111,4 @@ Nun kann man in einem beliebigen Browser mit der Eingabe *localhost* das index.p
 2. Mit der Tastenkombination *CTRL-C* in der CMD kann man den Container stoppen. 
 3. Möchte ich den Container erneut starten, lasse ich mir mit *docker ps --all* alle vorhandenen Container anzeigen und starte diesen wieder indem ich die ersten paar Buchstaben und Ziffern der ID eintippe *docker start abc77*  
 
-**Docker-Umgebung in Cloud(K3/K4/K6)**  
+**Docker-Umgebung in Cloud (K3/K4/K6)**  
