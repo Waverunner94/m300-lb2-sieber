@@ -88,3 +88,10 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 FROM: gibt an welches Image heruntergeladen werden soll, in diesem Fall PHP-Apache 7.3.4.  
 COPY: Kopiert den Inhalt des Host-Verzeichnisses (*src/*) ins Verzeichnis des Containers (*/var/www/html*).  
 EXPOSE: Sagt Docker auf welche Ports die laufenden Container hören sollen.  
+5. Das Dockerfile abspeichern und via CMD den Befehl *docker build -t sali-welt .* eingeben + ausführen. Dies erstellt ein neues Image mit dem Namen *Sali-Welt*.  
+
+**Ausführen eines Containers mit persistenter Datenablage**  
+Damit ich den Container nicht bei jeder Änderung im PHP-File stoppen und wieder starten muss, erzeuge ich beim starten des Containers eine persistente Datenablage und jede Änderung die ich am Host im PHP-File vornehme wird auch im Container vorgenommen.  
+1. In der CMD folgenden Befehl eingeben: *docker run -p 80:80 -v C:/lb2/src/:/var/www/html sali-welt*.  
+
+Nun kann in einem beliebigen Browser mit der Eingabe *localhost* das index.php-File aufrufen und alle Änderungen auf dem Host sind sofort nach aktualisieren der Seite sichtbar.
