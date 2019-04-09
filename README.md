@@ -18,7 +18,7 @@
 
 
 ## 01 - Verwendete Tools
-* Oracle VirtualBox 6.0
+* Hyper-V
 * Docker Desktop
 * Visual Studio Code
 * Git-Client (inkl. SSH-Key)
@@ -56,6 +56,9 @@ Keine Vorkenntnisse mit Microservices vorhanden, noch nie damit auseinandergeset
 ## 03 Lernschritte und Durchführung LB2
 Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktualisieren werde.  
 
+**Netzwerkplan**  
+
+
 **Docker-Befehle**  
 *docker ps -all*                                                - Zeigt alle aktiven und beendeten Container an.  
 *docker images -a*                                              - Zeigt alle lokalen Images an.  
@@ -66,3 +69,14 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 *docker inspect [volumename]*                                   - Zeigt detailierte Informationen zum erstellen Volume an.  
 *docker run -it -volume1:/container/volume1 ubuntu /bin/bash*   - Startet Container mit interaktiven Shell und dem Volume.  
 *docker build -t sali-welt .*                                   - Erstellt ein Image aufgrund des Dockerfiles im aktiven Verzeichnis und benennt dies "Sali-Welt".  
+
+**Erstellen eines Images mit einem Dockerfile**  
+1. Zuerst habe ich ein Verzeichnis (*C:/LB2/src*) erstellt.  
+2. Mithilfe Visual Studio Code habe ich ein *index.php* File in */src/* erzeugt und ein Dockerfile direkt in *C:/LB2/*.  
+3. Das PHP-File besteht aus einem simplen Code:  
+```
+  <?php
+    echo "Sali welt"
+  ?>
+```
+4. 
