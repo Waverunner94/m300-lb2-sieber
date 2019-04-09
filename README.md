@@ -71,7 +71,7 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 +-------------------------------------------------+
 ```
 
-**Docker-Befehle**  
+**Übersicht Docker-Befehle**  
 *docker ps -all*                                                - Zeigt alle aktiven und beendeten Container an.  
 *docker images -a*                                              - Zeigt alle lokalen Images an.  
 *docker rm [Containername]*                                     - Löscht beliebigen Container.  
@@ -82,7 +82,7 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 *docker run -it -volume1:/container/volume1 ubuntu /bin/bash*   - Startet Container mit interaktiven Shell und dem Volume.  
 *docker build -t sali-welt .*                                   - Erstellt ein Image aufgrund des Dockerfiles im aktiven Verzeichnis und benennt dies "Sali-Welt".  
 
-**Erstellen eines Images mit einem Dockerfile**  
+**Erstellen eines Images mit einem Dockerfile (K3)**  
 1. Zuerst habe ich ein Verzeichnis (*C:/LB2/src*) erstellt.  
 2. Mithilfe Visual Studio Code habe ich ein *index.php* File in */src/* erzeugt und ein Dockerfile direkt in *C:/LB2/*.  
 3. Das PHP-File besteht aus einem simplen Code:  
@@ -102,7 +102,7 @@ COPY: Kopiert den Inhalt des Host-Verzeichnisses (*src/*) ins Verzeichnis des Co
 EXPOSE: Sagt Docker auf welche Ports die laufenden Container hören sollen.  
 5. Das Dockerfile abspeichern und via CMD den Befehl *docker build -t sali-welt .* eingeben + ausführen. Dies erstellt ein neues Image mit dem Namen *Sali-Welt*.  
 
-**Ausführen eines Containers mit persistenter Datenablage**  
+**Ausführen eines Containers mit persistenter Datenablage(K3)**  
 Damit ich den Container nicht bei jeder Änderung im PHP-File stoppen und wieder starten muss, erzeuge ich beim starten des Containers eine persistente Datenablage und jede Änderung die ich am Host im PHP-File vornehme wird auch im Container vorgenommen.  
 1. In der CMD folgenden Befehl eingeben: *docker run -p 80:80 -v C:/lb2/src/:/var/www/html sali-welt*.  
 
@@ -111,4 +111,4 @@ Nun kann man in einem beliebigen Browser mit der Eingabe *localhost* das index.p
 2. Mit der Tastenkombination *CTRL-C* in der CMD kann man den Container stoppen. 
 3. Möchte ich den Container erneut starten, lasse ich mir mit *docker ps --all* alle vorhandenen Container anzeigen und starte diesen wieder indem ich die ersten paar Buchstaben und Ziffern der ID eintippe *docker start abc77*  
 
-**Docker-Umgebung in Cloud**
+**Docker-Umgebung in Cloud(K3/K4/K6)**  
