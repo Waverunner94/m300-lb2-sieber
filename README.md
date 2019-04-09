@@ -9,9 +9,11 @@
     - [02.2 - Virtualisierung](#022---virtualisierung)
     - [02.3 - Vagrant](#023---vagrant)
     - [02.4 - Versionsverwaltung](#024---versionsverwaltung)
-    - [02.5 Mark Down](#025-mark-down)
-    - [02.6 Systemsicherheit](#026-systemsicherheit)
-    - [02.7 Docker Desktop](#027-docker-desktop)
+    - [02.5 - Mark Down](#025---mark-down)
+    - [02.6 - Systemsicherheit](#026---systemsicherheit)
+    - [02.7 - Containerisierung](#027---containerisierung)
+    - [02.8 - Docker Desktop](#028---docker-desktop)
+    - [02.9 - Microservices](#029---microservices)
   - [03 Lernschritte und Durchführung LB2](#03-lernschritte-und-durchf%C3%BChrung-lb2)
 
 
@@ -36,14 +38,20 @@ Vorkenntnisse aus Modul 300 - LB1, virtuelle Umgebung bestehend aus Proxy-, Web-
 Cloud-spezifische Erfahrung mit Versionverwaltung vorhanden: Dokumente in Google Drive jeweils so versionisiert, dass alte Versionen jederzeit wiederhergestellt werden konnten.
 Keine Vorkenntnisse mit Git vorhanden.
 
-### 02.5 Mark Down
+### 02.5 - Mark Down
 Vorkenntnisse aus Modul 300 - LB1 vorhanden, Dokumentation mit Mark Down geschrieben und auf GitHub Repository veröffentlicht.
 
-### 02.6 Systemsicherheit
+### 02.6 - Systemsicherheit
 Erfahrung mit der sicheren Aufbewahrung von sensitiven Daten, sicheres lagern von Passwörtern, Firewall, etc.  
 
-### 02.7 Docker Desktop
-Keine Vorkenntnisse mit Docker vorhanden, noch nie damit gearbeitet.
+### 02.7 - Containerisierung
+Bisher keine Erfahrung mit Containerisierung gesammelt, noch nie damit gearbeitet oder mich damit auseinandergesetzt  
+
+### 02.8 - Docker Desktop
+Keine Vorkenntnisse mit Docker vorhanden, noch nie damit gearbeitet.  
+
+### 02.9 - Microservices
+Keine Vorkenntnisse mit Microservices vorhanden, noch nie damit auseinandergesetzt, bzw. gearbeitet.  
 
 ## 03 Lernschritte und Durchführung LB2
 Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktualisieren werde.  
