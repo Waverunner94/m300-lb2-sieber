@@ -22,6 +22,7 @@
 * Docker Desktop
 * Visual Studio Code
 * Git-Client (inkl. SSH-Key)
+* PuTTy
   
 ## 02 - Wissenstand
 
@@ -78,8 +79,7 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 *docker rmi [Imagename]*                                        - Löscht beliebiges Image.  
 *docker pull [Filename]*                                        - Beliebiges Image herunterladen, z.B. Ubuntu.  
 *docker volume create [name]*                                   - Erstellen eines Volumes auf dem Host.  
-*docker inspect [volumename]*                                   - Zeigt detailierte Informationen zum erstellen Volume an.  
-*docker run -it -volume1:/container/volume1 ubuntu /bin/bash*   - Startet Container mit interaktiven Shell und dem Volume.  
+*docker inspect [volumename]*                                   - Zeigt detailierte Informationen zum erstellen Volume an.   
 *docker build -t sali-welt .*                                   - Erstellt ein Image aufgrund des Dockerfiles im aktiven Verzeichnis und benennt dies "Sali-Welt".  
 
 **Erstellen eines Images mit einem Dockerfile (K3)**  
