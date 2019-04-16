@@ -13,8 +13,11 @@
     - [02.6 - Systemsicherheit](#026---systemsicherheit)
     - [02.7 - Containerisierung](#027---containerisierung)
     - [02.8 - Docker Desktop](#028---docker-desktop)
-    - [02.9 - Microservices](#029---microservices)
+    - [02.9 - Micro Services](#029---micro-services)
   - [03 Lernschritte und Durchführung LB2](#03-lernschritte-und-durchf%C3%BChrung-lb2)
+  - [04 Persönliche Lernentwicklung](#04-pers%C3%B6nliche-lernentwicklung)
+    - [04.1 Vergleich Vorwissen - Wissenszuwachs](#041-vergleich-vorwissen---wissenszuwachs)
+    - [04.2 Reflexion](#042-reflexion)
 
 
 ## 01 - Verwendete Tools
@@ -53,7 +56,7 @@ Bisher keine Erfahrung mit Containerisierung gesammelt, noch nie damit gearbeite
 ### 02.8 - Docker Desktop
 Keine Vorkenntnisse mit Docker vorhanden, noch nie damit gearbeitet.  
 
-### 02.9 - Microservices
+### 02.9 - Micro Services
 Keine Vorkenntnisse mit Microservices vorhanden, noch nie damit auseinandergesetzt, bzw. gearbeitet.  
 
 ## 03 Lernschritte und Durchführung LB2
@@ -88,4 +91,22 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 * [Lokales Setup (K3)](Lokales_Setup.md)
 * [Cloud (K3/K4/K6)](Cloud.md)  
   - Webserver   - [18.195.215.14:80](http://18.195.215.14:80)  
-  - Monitoring  - [18.195.215.14:8080](http://18.195.215.14:8080)
+  - Monitoring  - [18.195.215.14:8080](http://18.195.215.14:8080)  
+
+## 04 Persönliche Lernentwicklung
+### 04.1 Vergleich Vorwissen - Wissenszuwachs
+Ich beziehe mich hier vor allem auf die Bereiche, in denen ich vor dem Projekt keine Vorkenntnisse hatte!  
+
+**Containerisierung**
+Wissenszuwachs: Eigene Container erstellt, diese entsprechend konfiguriert.  
+
+**Docker Desktop**
+Wissenszuwachs: Docker Desktop für Projekt [Lokales Setup](Lokales_Setup.md) verwendet.
+
+**Micro Services**
+Kein wirklicher Wissenszuwachs, habe mich weniger mit Micro Services auseinandergesetzt.  
+
+### 04.2 Reflexion
+Ich habe LB3 mit zwei kleineren Projekten gemacht.  
+Mit dem lokalen Setup auf meinem Windows Notebook konnte ich mir ein Grundwissen verschaffen, welches ich im Anschluss in der Cloud-Umgebung mit dem zweiten Projekt angewendet habe.  
+Neben einem grossen Wissenszuwachs mit Docker, Images und der Containerisierung, konnte ich dank der Amazon Linux 2 Maschine meine Linux-Kenntnisse verbessern.
