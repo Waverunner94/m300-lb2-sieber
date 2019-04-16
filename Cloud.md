@@ -21,7 +21,7 @@ Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) h
 4. Root-User abmelden mit *exit*  
 5. Prüfen ob docker-compose korrekt installiert wurde mit *docker-compose -v*  
 
-### Wordrpess-Einrichtung mithilfe von Compose  
+### Wordpess & MariaDB Installation mit Compose  
 1. Ein neues Verzeichnis erstellen und direkt in dieses Wechseln mit *mkdir ~/wordpress_app && cd ~/wordpress_app*  
 2. Mit beliebigem Texteditor ein neues Dockerfile erzeugen, ich habe dafür den vim-Editor gewählt: *sudo vim Dockerfile*  
 3. Folgende Zeilen in das File einfügen. Diese geben Docker an wie das Image gebuildet werden muss:  
@@ -42,15 +42,27 @@ wordpress:
      - "18.195.215.14:80:80"
     volumes:
      - ./code:/code
-     - ./html:/var/www/html
+     - ./html:/var/www/html  
+     
 mariadb:
     image: mariadb
     environment:
      - MYSQL_ROOT_PASSWORD=<password>
      - MYSQL_DATABASE=wordpress
     volumes:
-     - ./database:/var/lib/mysql
+     - ./database:/var/lib/mysql  
+
+cadvisor:
+    image: google/cadvisor
+    ports:
+     - 8080:8080
+    restart: always
+    volumes:
+     - /:/rootfs:ro
+     - /var/run:/var/run:rw
+     - /sys:/sys:ro
+     - /var/lib/docker/:/var/lib/docker:ro
 ``` 
-In diesem File werden die Befehle für Docker Compose festgelegt. Es soll ein Wordpress und ein MariaDB Container mit den jeweiligen Konfigurationen erstellt werden.  
+In diesem File werden die Befehle für Docker Compose festgelegt. Es soll ein Wordpress, ein MariaDB sowie ein cAdvisor Container mit den jeweiligen Konfigurationen erstellt werden.  
 6. Das File speichern und den Editor beenden. Mit *docker-compose up -d* werden die Container aufgrund des .yml-Files erzeugt.  
 7. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*

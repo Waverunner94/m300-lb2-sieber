@@ -85,4 +85,6 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 
 **Ausgeführte Projekte**
 * [Lokales Setup (K3)](Lokales_Setup.md)
-* [Cloud (K3/K4/K6)](Cloud.md)
+* [Cloud (K3/K4/K6)](Cloud.md)  
+  - Webserver   - [18.195.215.14:80](http://18.195.215.14:80)  
+  - Monitoring  - [18.195.215.14:8080](http://18.195.215.14:8080)
