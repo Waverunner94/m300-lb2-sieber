@@ -82,36 +82,5 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 *docker build -t sali-welt .*                                   - Erstellt ein Image aufgrund des Dockerfiles im aktiven Verzeichnis und benennt dies "Sali-Welt".  
 
 **Ausgeführte Projekte**
-* [Lokales Setup](Lokales_Setup.md)
-
-**Docker-Umgebung in Cloud (K3/K4/K6)**  
-Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) habe ich Docker auf einer Amazon Linux 2 Maschine installiert und die Container von dieser Maschine aus ausgeführt.  
-1. Erstellen eines AWS-Accounts, dies ermöglicht eine kostenlose 12-Monatige Nutzung verschiedener AWS-Dienstleistungen (Kreditkarte benötigt!).  
-2. Erzeugen einer *AWS EC2 Instance*, hier habe ich mich für die kostenfreie Amazon Linux 2 Instanz entschieden.  
-3. SSH-Key herunterladen und mit PuTTYgen einen privaten Key erzeugen um eine [SSH-Verbindung via PuTTy](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console) zu ermöglichen.  
-4. Mithilfe den vorhandenen Informationen der erzeugten AWS EC2 Insanz, eine SSH-Verbindung via PuTTy zur Amazon Linux 2 Maschine herstellen.  
-5. Updaten der Linux Instanz mit *sudo yum update -y*  
-6. Docker installieren mit *sudo amazon-linux-extras install docker*
-7. Docker starten mit *sudo service docker start*  
-8. Den ec2-user (User der Amazon Linux 2 Instanz) zur Docker-Gruppe hinzufügen um Docker-Befehle ohne sudo ausführen zu können *sudo usermod -a -G docker ec2-user*  
-9. Nach aus- und einloggen mit *docker info* prüfen ob Docker Befehle nun ohne sudo ausgeführt werden können.  
-10. Mit *docker volume create lb2* ein neues Volume-Verzeichnis erstellen.  
-11. Mit *sudo su* als Root-User anmelden und mit *cd /var/lib/docker/* das Verzeichnis wechseln.  
-12. Die Berechtigungen für das Verzeichnis *Volumes* mit *sudo chmod -R 755 volumes/* ändern.  
-13. Ins Verzeichnis *Volumes* wechseln und mit *touch index.php* ein PHP-File erstellen.  
-14. Mithilfe des VIM-Editors *vim index.php* das PHP-File bearbeiten und folgende Zeilen einfügen:  
-```
-  <?php
-    echo "Sali welt"
-  ?>
-```
-15. In ein beliebiges Verzeichnis wechseln und mit *touch Dockerfile* ein Dockerfile erstellen.  
-16. Mithilfe des VIM-Editors *vim Dockerfile* das Dockerfile bearbeiten und folgende Zeilen einfügen:  
-```
-  FROM php:7.3.4-apache
-  COPY src/ /var/www/html
-  EXPOSE 80
-```  
-17. Ein neues Image basierend auf dem erstellten Dockerfile mit *docker build -t sali-welt .* erzeugen.  
-18. Den Container mit der persistenten Dateiablage starten: *docker run -p 80:80 -v /var/lib/docker/volumes/lb2/:/var/www/html/ sali-welt*  
-19. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*
+* [Lokales Setup (K3)](Lokales_Setup.md)
+* [Cloud (K3/K4/K6)](Cloud.md)
