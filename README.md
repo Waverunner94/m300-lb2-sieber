@@ -20,6 +20,8 @@
 ## 01 - Verwendete Tools
 * Hyper-V
 * Docker Desktop
+* Docker Linux
+* Docker Compose
 * Visual Studio Code
 * Git-Client (inkl. SSH-Key)
 * PuTTy
@@ -65,7 +67,7 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 +-----------------------------------------------------------+
 ! Docker                                                    !
 +-----------------------------------------------------------+
-! Kubernetes Umgebung AWS EC2 Amazon Linux 2                !
+! Cloud - AWS EC2 Amazon Linux 2                            !
 +-----------------------------------------------------------+
 ! Notebook - Schulnetz 10.x.x.x                             !
 +-----------------------------------------------------------+
