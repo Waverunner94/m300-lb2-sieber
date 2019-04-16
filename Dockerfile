@@ -1,3 +1,2 @@
-FROM php:7.3.4-apache
-COPY src/ /var/www/html
-EXPOSE 80
+FROM orchardup/php5
+ADD . /code
