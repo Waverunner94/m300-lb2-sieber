@@ -1,0 +1,30 @@
+wordpress:
+    image: wordpress
+    links:
+     - mariadb:mysql
+    environment:
+     - WORDPRESS_DB_PASSWORD=<password>
+    ports:
+     - "18.195.215.14:80:80"
+    volumes:
+     - ./code:/code
+     - ./html:/var/www/html  
+     
+mariadb:
+    image: mariadb
+    environment:
+     - MYSQL_ROOT_PASSWORD=<password>
+     - MYSQL_DATABASE=wordpress
+    volumes:
+     - ./database:/var/lib/mysql  
+
+cadvisor:
+    image: google/cadvisor
+    ports:
+     - 8080:8080
+    restart: always
+    volumes:
+     - /:/rootfs:ro
+     - /var/run:/var/run:rw
+     - /sys:/sys:ro
+     - /var/lib/docker/:/var/lib/docker:ro
