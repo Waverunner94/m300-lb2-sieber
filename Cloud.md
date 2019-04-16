@@ -26,31 +26,31 @@ Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) h
 2. Mit beliebigem Texteditor ein neues Dockerfile erzeugen, ich habe dafür den vim-Editor gewählt: *sudo vim Dockerfile*  
 3. Folgende Zeilen in das File einfügen. Diese geben Docker an wie das Image gebuildet werden muss:  
 ´´´
-    FROM orchardup/php5  
-    ADD . /code  
+FROM orchardup/php5  
+ADD . /code  
 ´´´
 4. Das File speichern und den Editor verlassen. Ein neues File namens *docker-compose.yml* mit *sudo vim docker-compose.yml* erzeugen.  
 5. Folgende Zeilen in das File einfügen:
 ´´´
-    wordpress:
-    image: wordpress
-    links:
-     - mariadb:mysql
-    environment:
-     - WORDPRESS_DB_PASSWORD=<password>
-    ports:
-     - "18.195.215.14:80:80"
-    volumes:
-     - ./code:/code
-     - ./html:/var/www/html
+wordpress:
+image: wordpress
+links:
+- mariadb:mysql
+environment:
+- WORDPRESS_DB_PASSWORD=<password>
+ports:
+- "18.195.215.14:80:80"
+volumes:
+- ./code:/code
+- ./html:/var/www/html
 mariadb:
-    image: mariadb
-    environment:
-     - MYSQL_ROOT_PASSWORD=<password>
-     - MYSQL_DATABASE=wordpress
-    volumes:
-     - ./database:/var/lib/mysql
+image: mariadb
+environment:
+- MYSQL_ROOT_PASSWORD=<password>
+- MYSQL_DATABASE=wordpress
+volumes:
+- ./database:/var/lib/mysql
 ´´´
 In diesem File werden die Befehle für Docker Compose festgelegt. Es soll ein Wordpress und ein MariaDB Container mit den jeweiligen Konfigurationen erstellt werden.  
-6. Das File speichern und den Editor beenden. Mit *docker-compose up -d* werden die Container aufgrund des .yml-Files erzeugt.  
-7. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*
+1. Das File speichern und den Editor beenden. Mit *docker-compose up -d* werden die Container aufgrund des .yml-Files erzeugt.  
+2. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*
