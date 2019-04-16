@@ -28,7 +28,7 @@ Mithilfe von [AWS](https://aws.amazon.com/) EC2 (Amazon Elastic Compute Cloud) h
 ´´´
     FROM orchardup/php5  
     ADD . /code  
-´´´  
+´´´
 4. Das File speichern und den Editor verlassen. Ein neues File namens *docker-compose.yml* mit *sudo vim docker-compose.yml* erzeugen.  
 5. Folgende Zeilen in das File einfügen:
 ´´´
@@ -50,7 +50,7 @@ mariadb:
      - MYSQL_DATABASE=wordpress
     volumes:
      - ./database:/var/lib/mysql
-´´´  
+´´´
 In diesem File werden die Befehle für Docker Compose festgelegt. Es soll ein Wordpress und ein MariaDB Container mit den jeweiligen Konfigurationen erstellt werden.  
 6. Das File speichern und den Editor beenden. Mit *docker-compose up -d* werden die Container aufgrund des .yml-Files erzeugt.  
 7. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*
