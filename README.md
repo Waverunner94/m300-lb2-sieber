@@ -64,6 +64,7 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 +-----------------------------------------------------------+
 ! Container wordpress Frontend Webserver - 18.195.215.14:80 !
 ! Container mariadb Datenbank - Keine Public-IP             !
+! Container cAdvisor Monitoring - 18.195.215.14:8080        !
 +-----------------------------------------------------------+
 ! Docker                                                    !
 +-----------------------------------------------------------+

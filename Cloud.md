@@ -65,4 +65,16 @@ cadvisor:
 ``` 
 In diesem File werden die Befehle für Docker Compose festgelegt. Es soll ein Wordpress, ein MariaDB sowie ein cAdvisor Container mit den jeweiligen Konfigurationen erstellt werden.  
 6. Das File speichern und den Editor beenden. Mit *docker-compose up -d* werden die Container aufgrund des .yml-Files erzeugt.  
-7. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*
+7. Die Amazon Linux 2 Instanz via Browser abrufen: *[http://18.195.215.14:80](http://18.195.215.14/)*  
+
+## Sicherheit
+### Service Überwachung
+Alle aktiven Container werden mit cAdvisor überwacht. Der Monitoring Dienst kann im Browser abgerufen werden: *[http:18.195.215.14:8080](http://18.195.215.14:8080)  
+
+### Aktive Benachrichtigung
+Lorem Ipsum  
+
+### Container-Absicherung
+- Container laufen auf abgesicherter Cloud: Zugriff nur via SSH-Verbindung  
+- Container laufen mit aktuellster Software und im Produktivmodus (ausgeführt mit -d)  
+- Die MariaDB ist mit einem Passwortschutz ausgestattet (*docker exec -it [ContainerID] /bin/bash* -> *mysql_secure_installation*)  
