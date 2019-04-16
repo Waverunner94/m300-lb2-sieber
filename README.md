@@ -59,17 +59,16 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 
 **Netzwerkplan**  
 ```
-+-------------------------------------------------+
-! Container Lorem Ipsum - x.x.x.x                 !
-! Container Lorem Ipsum - x.x.x.x                 !
-! Container PHP-Apache - 18.195.215.14:80         !
-+-------------------------------------------------+
-! Docker                                          !
-+-------------------------------------------------+
-! Kubernetes Umgebung AWS EC2 Amazon Linux 2      !
-+-------------------------------------------------+
-! Notebook - Schulnetz 10.x.x.x                   !
-+-------------------------------------------------+
++-----------------------------------------------------------+
+! Container wordpress Frontend Webserver - 18.195.215.14:80 !
+! Container mariadb Datenbank - Keine Public-IP             !
++-----------------------------------------------------------+
+! Docker                                                    !
++-----------------------------------------------------------+
+! Kubernetes Umgebung AWS EC2 Amazon Linux 2                !
++-----------------------------------------------------------+
+! Notebook - Schulnetz 10.x.x.x                             !
++-----------------------------------------------------------+
 ```
 
 **Übersicht Docker-Befehle**  
