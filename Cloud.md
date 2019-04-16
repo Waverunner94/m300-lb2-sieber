@@ -71,9 +71,6 @@ In diesem File werden die Befehle für Docker Compose festgelegt. Es soll ein Wo
 ### Service Überwachung
 Alle aktiven Container werden mit cAdvisor überwacht. Der Monitoring Dienst kann im Browser abgerufen werden: *[http:18.195.215.14:8080](http://18.195.215.14:8080)  
 
-### Aktive Benachrichtigung
-Lorem Ipsum  
-
 ### Container-Absicherung
 - Container laufen auf abgesicherter Cloud: Zugriff nur via SSH-Verbindung  
 - Container laufen mit aktuellster Software und im Produktivmodus (ausgeführt mit -d)  

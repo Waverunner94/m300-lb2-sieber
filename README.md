@@ -97,13 +97,13 @@ Die Lernschritte, die ich während der Durchführung von LB2 kontinuierlich aktu
 ### 04.1 Vergleich Vorwissen - Wissenszuwachs
 Ich beziehe mich hier vor allem auf die Bereiche, in denen ich vor dem Projekt keine Vorkenntnisse hatte!  
 
-**Containerisierung**
+**Containerisierung**  
 Wissenszuwachs: Eigene Container erstellt, diese entsprechend konfiguriert.  
 
-**Docker Desktop**
+**Docker Desktop**  
 Wissenszuwachs: Docker Desktop für Projekt [Lokales Setup](Lokales_Setup.md) verwendet.
 
-**Micro Services**
+**Micro Services**  
 Kein wirklicher Wissenszuwachs, habe mich weniger mit Micro Services auseinandergesetzt.  
 
 ### 04.2 Reflexion
