@@ -81,4 +81,7 @@ Alle aktiven Container werden mit cAdvisor überwacht. Der Monitoring Dienst kan
 Mithilfe des *docker-compose.yml*-Files können laufende Änderungen vorgenommen werden.  
 
 ### Cloud-Integration
-Die komplette Umgebung wurde mithilfe Amazon Web Services (AWS) aufgebaut und läuft auf einer Amazon Linux 2 Instanz.
+Die komplette Umgebung wurde mithilfe Amazon Web Services (AWS) aufgebaut und läuft auf einer Amazon Linux 2 Instanz.  
+
+### Image Bereitstellung
+In Docker Hub habe ich ein [https://cloud.docker.com/u/waverunner94/repository/docker/waverunner94/m300-lb2](Repository) erstellt und darauf meine drei Images hochgeladen. (docker tag IMAGE_ID waverunner94/m300-lb2:TAGNAME)
