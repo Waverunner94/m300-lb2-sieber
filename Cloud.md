@@ -84,4 +84,4 @@ Mithilfe des *docker-compose.yml*-Files können laufende Änderungen vorgenommen
 Die komplette Umgebung wurde mithilfe Amazon Web Services (AWS) aufgebaut und läuft auf einer Amazon Linux 2 Instanz.  
 
 ### Image Bereitstellung
-In Docker Hub habe ich ein [https://cloud.docker.com/u/waverunner94/repository/docker/waverunner94/m300-lb2](Repository) erstellt und darauf meine drei Images hochgeladen. (docker tag IMAGE_ID waverunner94/m300-lb2:TAGNAME)
+In Docker Hub habe ich ein [Repository](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html) erstellt und darauf meine drei Images hochgeladen. (docker tag IMAGE_ID waverunner94/m300-lb2:TAGNAME)
